@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Monkey to Monk: A Simple Guide to Stop Overthinking</title>
+<meta name="description" content="A 65-page practical guide to calm overthinking, phone habits and a scattered mind. Rs. 99, instant PDF download.">
+<meta property="og:image" content="cover.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- META PIXEL: paste your Pixel code here (needed for Facebook Ads).
+     The Buy buttons below already fire fbq('track','InitiateCheckout') on click. -->
+
+<style>
+  :root {
+    --ink: #161B33;
+    --ink-soft: #2A3157;
+    --saffron: #F29A1F;
+    --saffron-deep: #A85C06;
+    --paper: #FAFAFD;
+    --mist: #EEF0F7;
+    --line: #D9DCEB;
+    --text: #232842;
+    --muted: #5B6285;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Source Sans 3", system-ui, sans-serif;
+    font-size: 18px; line-height: 1.6; color: var(--text); background: var(--paper);
+    padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+  }
+  h1, h2, h3 { font-family: "Bricolage Grotesque", "Source Sans 3", sans-serif; font-weight: 700; line-height: 1.2; }
+  img { max-width: 100%; display: block; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+  section { padding: 52px 0; }
+  h2 { font-size: 28px; margin-bottom: 20px; color: var(--ink); }
+
+  .hero { background: var(--ink); color: #fff; padding: 36px 0 48px; }
+  .hero h1 { font-size: 34px; margin-bottom: 14px; }
+  .hero p.sub { color: #C9CDE6; font-size: 19px; margin-bottom: 26px; }
+  .noise { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+  .noise span { font-size: 15px; padding: 5px 12px; border-radius: 999px; background: var(--ink-soft); color: #AEB4D6; }
+  .noise span:nth-child(2n) { transform: rotate(-1.5deg); }
+  .noise span:nth-child(3n) { transform: rotate(1.2deg); }
+  .calm {
+    border-left: 3px solid var(--saffron); padding: 4px 0 4px 14px;
+    font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; font-size: 22px; color: #fff; margin-bottom: 28px;
+  }
+  .cover { width: 240px; height: auto; margin: 0 auto 28px; border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+  .price { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+  .price b { font-size: 40px; color: var(--saffron); font-weight: 700; }
+  .price s { color: #8D93B8; font-size: 20px; }
+  .price em { font-style: normal; font-size: 15px; color: #C9CDE6; }
+
+  .btn {
+    display: block; width: 100%; text-align: center; text-decoration: none;
+    background: var(--saffron); color: var(--ink); font-weight: 700; font-size: 20px;
+    padding: 15px 20px; border-radius: 10px;
+  }
+  .btn:hover { background: #FFAE3D; }
+  .btn:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+  .assure { margin-top: 12px; font-size: 15px; color: #AEB4D6; text-align: center; }
+
+  .check li { list-style: none; padding: 14px 0 14px 34px; border-bottom: 1px solid var(--line); position: relative; }
+  .check li::before { content: ""; position: absolute; left: 4px; top: 22px; width: 14px; height: 14px; border: 2px solid var(--saffron-deep); border-radius: 3px; }
+  .verdict { margin-top: 20px; font-weight: 600; color: var(--ink); }
+
+  .inside { background: var(--mist); }
+  .tools { display: grid; gap: 14px; }
+  .tool { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+  .tool h3 { font-size: 20px; color: var(--ink); margin-bottom: 4px; }
+  .tool p { font-size: 17px; color: var(--muted); }
+
+  .story blockquote { font-size: 19px; border-left: 3px solid var(--saffron); padding-left: 16px; color: var(--ink); }
+  .story p + p, .story blockquote + p { margin-top: 14px; }
+
+  .fit { display: grid; gap: 20px; }
+  .fit h3 { font-size: 20px; margin-bottom: 6px; color: var(--ink); }
+  .fit ul { padding-left: 20px; color: var(--muted); }
+
+  details { border-bottom: 1px solid var(--line); padding: 14px 0; }
+  summary { font-weight: 600; cursor: pointer; color: var(--ink); }
+  details p { margin-top: 8px; color: var(--muted); font-size: 17px; }
+
+  .final { background: var(--ink); color: #fff; text-align: center; }
+  .final h2 { color: #fff; }
+  .final .price { justify-content: center; }
+  footer { padding: 24px 0 8px; font-size: 14px; color: var(--muted); }
+
+  .bar {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+    background: #fff; border-top: 1px solid var(--line);
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+    display: flex; align-items: center; gap: 14px;
+  }
+  .bar .p { line-height: 1.1; white-space: nowrap; }
+  .bar .p b { font-size: 24px; color: var(--ink); }
+  .bar .p s { font-size: 14px; color: var(--muted); margin-left: 6px; }
+  .bar .btn { padding: 12px 16px; font-size: 18px; }
+
+  @media (min-width: 720px) {
+    .hero h1 { font-size: 44px; }
+    .fit { grid-template-columns: 1fr 1fr; }
+    .tools { grid-template-columns: 1fr 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="noise" aria-hidden="true">
+      <span>1 AM: that old mistake</span>
+      <span>just one reel</span>
+      <span>what about tomorrow?</span>
+      <span>check my phone?</span>
+      <span>why did they say that</span>
+    </div>
+    <p class="calm">The noise in your mind can stop.</p>
+    <h1>A 65-page guide to stop overthinking and break the phone habit</h1>
+    <p class="sub">Monkey to Monk gives you simple tools for breathing, meditation, name chanting and focus. You can use them in your normal, busy day.</p>
+
+    <img class="cover" src="cover.jpg"
+         alt="Monkey to Monk book cover" width="800" height="1200">
+
+    <div class="price"><b>₹99</b><s>₹499</s><em>Limited-time price</em></div>
+    <a class="btn" href="#" data-buy>Buy now and start reading</a>
+    <p class="assure">Digital PDF · Instant download · Secure payment</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Does this sound like you?</h2>
+    <ul class="check">
+      <li>Your phone did not buzz, but your hand still reaches for it.</li>
+      <li>In the shower, you win arguments that never happened.</li>
+      <li>You finish a page of a book and remember nothing, because your mind was somewhere else.</li>
+      <li>At night, your brain reminds you of something embarrassing from years ago.</li>
+      <li>You sit down for “just one video” and two hours disappear.</li>
+    </ul>
+    <p class="verdict">If you said yes to more than two, this book is for you.</p>
+  </div>
+</section>
+
+<section class="inside">
+  <div class="wrap">
+    <h2>What you will learn</h2>
+    <div class="tools">
+      <div class="tool"><h3>Why your mind keeps jumping</h3><p>Restlessness, the dopamine habit and the overthinking loop, explained in plain words.</p></div>
+      <div class="tool"><h3>The 4-7-8 breathing method</h3><p>Slow down a racing mind in just 4 rounds.</p></div>
+      <div class="tool"><h3>Name chanting: a pillar for your mind</h3><p>A simple habit to keep your mind busy in empty moments, like waiting in line or walking.</p></div>
+      <div class="tool"><h3>Witness meditation</h3><p>Watch your thoughts without fighting them. You can do it with eyes open or closed.</p></div>
+      <div class="tool"><h3>The Spiritual Pomodoro</h3><p>Work for 25 minutes, then take a 5-minute break without your phone, so you return fresh.</p></div>
+      <div class="tool"><h3>How to bounce back after a slip</h3><p>The “Never Miss Twice” rule and a simple daily blueprint to make these habits last.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>A short story from the book</h2>
+    <blockquote>Raju turned his whole house upside down looking for his car keys. Tired, he finally sat down on a chair. The keys were in his pocket all along.</blockquote>
+    <p>Most of us look for peace the same way: outside, while running. The book shows you how to stop, look inside and start noticing.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap fit">
+    <div>
+      <h3>Who this book is for</h3>
+      <ul>
+        <li>People whose minds never slow down</li>
+        <li>Anyone who wants to use their phone less</li>
+        <li>Students and professionals who want better focus</li>
+        <li>Beginners who want an easy start with meditation and spiritual practice</li>
+      </ul>
+    </div>
+    <div>
+      <h3>What this book is not</h3>
+      <ul>
+        <li>It is not medical treatment or medical advice</li>
+        <li>If you feel severe stress or depression, please talk to a doctor or counselor</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="inside">
+  <div class="wrap">
+    <h2>Common questions</h2>
+    <details><summary>Is the book easy to read?</summary><p>Yes. It is written in simple English. Where it uses a Hindi or Sanskrit word, such as Naam Jaap or Sakshi Bhaav, it explains the meaning.</p></details>
+    <details><summary>How do I get the book?</summary><p>After payment, you get an instant link to download the PDF. You can read it on your phone.</p></details>
+    <details><summary>How long is it?</summary><p>65 pages and 5 chapters. You can read it in one or two sittings.</p></details>
+    <details><summary>How do I pay?</summary><p>Tap the button and a secure payment page opens. You can pay with UPI or a card.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Stay a monkey, or become a monk?</h2>
+    <div class="price"><b>₹99</b><s>₹499</s></div>
+    <a class="btn" href="#" data-buy>Buy now and start reading</a>
+    <p class="assure">Digital PDF · Instant download · Secure payment</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Author: S.K. Yadav. This book is for education and spiritual purposes only. The author is not a licensed psychologist or doctor. Results differ from person to person.</p>
+  </div>
+</footer>
+
+<div class="bar">
+  <div class="p"><b>₹99</b><s>₹499</s></div>
+  <a class="btn" href="#" data-buy>Buy now</a>
+</div>
+
+<script>
+  // Put your direct Peerseek payment/checkout link here (this is the only line you need to change)
+  var PAY_URL = "https://peerseek.io/thedigihub/products/Brtrh7/monkey-to-monk-a-guide-to-stop-overthinking";
+
+  document.querySelectorAll("[data-buy]").forEach(function (a) {
+    a.href = PAY_URL;
+    a.addEventListener("click", function () {
+      if (window.fbq) { try { fbq("track", "InitiateCheckout"); } catch (e) {} }
+    });
+  });
+</script>
+</body>
+</html>
